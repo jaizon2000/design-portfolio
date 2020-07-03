@@ -1,5 +1,37 @@
-#message {
-    width: 500px;
-    height: 300px;
-    line-height: 10px;
+#form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    font-weight: bolder;
+
+    input,
+    button {
+        height: 2rem;
+    }
+
+    #name {
+        input {
+            font-family: 'Nunito', sans-serif;
+
+        }
+    }
+
+    #message {
+        grid-column: 1/3;
+
+        textarea {
+            font-family: 'Nunito', sans-serif;
+            text-align: left;
+            // width: 60%;
+            // height: 10rem;
+        }
+    }
+
+    #send-btn {
+        grid-column: 1/3;
+
+        button {
+            font-family: 'Nunito', sans-serif;
+            width: 100%;
+        }
+    }
 }
